@@ -10,7 +10,7 @@ let fruits = [];
 let cart = [];
 
 // جایگزین کن با URL Backend که Render بهت داده
-const BACKEND_URL = "https://YOUR_RENDER_BACKEND_URL";
+const BACKEND_URL = "https://friutshop2.onrender.com";
 
 // بارگذاری میوه‌ها از Backend
 async function loadFruits() {
@@ -123,5 +123,6 @@ async function checkout() {
 }
 
 checkoutBtn.addEventListener("click", checkout);
+
 
 loadFruits();
