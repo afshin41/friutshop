@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فروشگاه آنلاین میوه</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; background:#f9f9f9; }
+h1 { text-align:center; }
+.fruits { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.card { background:#fff; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); width:150px; text-align:center; }
+.card button { margin-top:10px; padding:5px 10px; cursor:pointer; border:none; border-radius:5px; background:#28a745; color:white; }
+.cart, .invoice { margin-top:30px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); max-width:500px; margin-left:auto; margin-right:auto; }
+table { width:100%; border-collapse:collapse; margin-top:10px; }
+th, td { padding:8px; border-bottom:1px solid #ddd; text-align:center; }
+button#checkout { background:#007bff; margin-top:15px; color:white; border:none; padding:8px 12px; border-radius:5px; cursor:pointer; }
+</style>
+</head>
+<body>
+<h1>فروشگاه آنلاین میوه</h1>
+
+<div class="fruits" id="fruits">
+  <!-- کارت‌های میوه توسط JS اضافه می‌شوند -->
+</div>
+
+<div class="cart" id="cart">
+  <h2>سبد خرید</h2>
+  <table id="cart-table">
+    <thead>
+      <tr>
+        <th>میوه</th>
+        <th>کیلو</th>
+        <th>قیمت واحد</th>
+        <th>جمع</th>
+        <th>عملیات</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <h3 id="total">جمع کل: 0 تومان</h3>
+  <button id="checkout">ثبت سفارش و پرداخت</button>
+</div>
+
+<div class="invoice" id="invoice" style="display:none;">
+  <h2>فاکتور نهایی</h2>
+  <table id="invoice-table">
+    <thead>
+      <tr>
+        <th>میوه</th>
+        <th>کیلو</th>
+        <th>قیمت واحد</th>
+        <th>جمع</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <h3 id="invoice-total"></h3>
+</div>
+
+<script src="frontend.js"></script>
+</body>
+</html>
