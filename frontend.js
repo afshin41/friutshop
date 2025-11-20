@@ -126,3 +126,4 @@ checkoutBtn.addEventListener("click", checkout);
 
 
 loadFruits();
+
